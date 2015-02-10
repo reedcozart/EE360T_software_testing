@@ -10,11 +10,14 @@ public class SLListRepOkTester {
         SLList l = new SLList();
         assertTrue(l.repOk());
     }
-    
+    //Test suite needs to consist of valid, and invalid tests. It needs to make a decision, (make sure it isn't an infinite loop)
     @Test public void t1() {
         SLList l = new SLList();
+        //n loops on itself
         Node n = new Node();
-        // your code goes here
+        n.elem = false;
+        n.next = n; 
+        l.header = n; 
     }
     // your code goes here
 }
