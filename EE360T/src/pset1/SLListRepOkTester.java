@@ -13,7 +13,7 @@ public class SLListRepOkTester {
     //Test suite needs to consist of valid, and invalid tests. It needs to make a decision, (make sure it isn't an infinite loop)
     @Test public void t1() {
         SLList l = new SLList();
-        //n loops on itself
+        //l is one element long and n loops on itself
         Node n = new Node();
         n.elem = false;
         n.next = n; 
