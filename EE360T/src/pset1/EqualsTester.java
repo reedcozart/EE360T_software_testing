@@ -89,6 +89,11 @@ public class EqualsTester {
     	D d2 = new D(1,3);
     	assertFalse(d.equals(d2));
     }
+    @Test public void t16(){
+    	D d = new D(1,2);
+    	D d2 = new D(2,2);
+    	assertFalse(d.equals(d2));
+    }
     /**
      * P4: It is transitive: for any non-null reference values x, y, and z,
      * if x.equals(y) returns true and y.equals(z) returns true, then

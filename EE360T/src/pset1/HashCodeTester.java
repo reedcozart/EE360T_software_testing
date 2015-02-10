@@ -62,4 +62,11 @@ public class HashCodeTester {
     	 assertFalse(d.hashCode() == o.hashCode());
      }
      
+     @Test public void t9(){
+    	 C c = new C(1);
+    	 C c2 = new C(1);
+    	 for(int i = 0; i<100; i++){
+    		 assertTrue(c.hashCode() == c2.hashCode());
+    	 }
+     }
 }
