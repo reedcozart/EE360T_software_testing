@@ -20,6 +20,7 @@ public class SLListAddTester {
         assertTrue(l.header.getClass() == Node.class);
         assertTrue(l.header.elem == true);
         assertTrue(l.header.next == null);
+        assertTrue(l.repOk());
     }
     
     @Test public void test1() {
@@ -41,5 +42,6 @@ public class SLListAddTester {
         assertTrue(n instanceof Node );
         assertTrue(n.getClass() == Node.class);
         assertTrue(n.elem == true);
+        assertTrue(l.repOk());
     }
 }

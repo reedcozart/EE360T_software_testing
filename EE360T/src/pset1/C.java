@@ -5,11 +5,23 @@ public class C {
 		this.f = f;
 	}
 	@Override
-	public boolean equals(Object o) {
-		// assume this method is implemented for you
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		C other = (C) obj;
+		if (f != other.f)
+			return false;
+		return true;
 	}
 	@Override
 	public int hashCode() {
-		// assume this method is implemented for you
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + f;
+		return result;
 	}
 }
